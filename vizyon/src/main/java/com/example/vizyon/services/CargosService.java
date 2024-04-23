@@ -1,6 +1,6 @@
 package com.example.vizyon.services;
 
-import com.example.vizyon.repositories.CargosRepository;
+import com.example.vizyon.repositories.CargoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,5 +8,5 @@ import org.springframework.stereotype.Service;
 public class CargosService {
 
     @Autowired
-    CargosRepository cargosRepository;
+    CargoRepository cargosRepository;
 }

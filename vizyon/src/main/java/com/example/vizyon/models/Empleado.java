@@ -22,7 +22,7 @@ public class Empleado {
 
     @ManyToOne
     @JoinColumn(name = "id_cargo_fk")
-    private Cargos cargos;
+    private Cargo cargo;
 
     @ManyToOne
     @JoinColumn(name = "id_municipio_fk")
@@ -31,11 +31,11 @@ public class Empleado {
     public Empleado() {
     }
 
-    public Empleado(int idEmpleado, String nombre, Date fechaIngreso, Cargos cargos, Municipio municipio) {
+    public Empleado(int idEmpleado, String nombre, Date fechaIngreso,Cargo cargo, Municipio municipio) {
         this.idEmpleado = idEmpleado;
         this.nombre = nombre;
         this.fechaIngreso = fechaIngreso;
-        this.cargos = cargos;
+        this.cargo = cargo;
         this.municipio = municipio;
     }
 }

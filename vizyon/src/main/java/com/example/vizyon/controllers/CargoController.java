@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @PreAuthorize("hasRole('ADMIN')")
 @SecurityRequirement(name = "bearerAuth")
 @RequestMapping("/cargos")
-public class CargosComtroller {
+public class CargoController {
     @Autowired
     CargosService cargosService;
 }
