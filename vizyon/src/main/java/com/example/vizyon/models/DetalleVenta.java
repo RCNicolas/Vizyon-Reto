@@ -29,6 +29,18 @@ public class DetalleVenta {
     @JoinColumn(name = "id_talla_fk")
     private Talla talla;
 
+    public DetalleVenta() {
+    }
+
+    public DetalleVenta(int idDetalleVenta, int cantidad, Double valorUnit, Venta venta, Inventario producto, Talla talla) {
+        this.idDetalleVenta = idDetalleVenta;
+        this.cantidad = cantidad;
+        this.valorUnit = valorUnit;
+        this.venta = venta;
+        this.producto = producto;
+        this.talla = talla;
+    }
+
     public int getIdDetalleVenta() {
         return idDetalleVenta;
     }

@@ -24,6 +24,17 @@ public class Inventario {
     @JoinColumn(name = "Id_prenda_fk")
     private Prenda prenda;
 
+    public Inventario() {
+    }
+
+    public Inventario(int idInventario, String codInv, Double valorVtaCOP, Double valorVtaUSD, Prenda prenda) {
+        this.idInventario = idInventario;
+        this.codInv = codInv;
+        this.valorVtaCOP = valorVtaCOP;
+        this.valorVtaUSD = valorVtaUSD;
+        this.prenda = prenda;
+    }
+
     public int getIdInventario() {
         return idInventario;
     }

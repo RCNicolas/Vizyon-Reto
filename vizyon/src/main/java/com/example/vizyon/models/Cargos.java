@@ -17,6 +17,15 @@ public class Cargos {
     @Column(name = "sueldo_base")
     private double sueldoBase;
 
+    public Cargos() {
+    }
+
+    public Cargos(int idCargo, String descripcion, double sueldoBase) {
+        this.idCargo = idCargo;
+        this.descripcion = descripcion;
+        this.sueldoBase = sueldoBase;
+    }
+
     public int getIdCargo() {
         return idCargo;
     }

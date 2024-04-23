@@ -26,6 +26,18 @@ public class Empresa {
     @Column(name = "fecha_creacion")
     private Date fechaCreacion;
 
+    public Empresa() {
+    }
+
+    public Empresa(int idEmpresa, String nit, String razonSocial, String representanteLegal, Date fechaCreacion, Municipio municipio) {
+        this.idEmpresa = idEmpresa;
+        this.nit = nit;
+        this.razonSocial = razonSocial;
+        this.representanteLegal = representanteLegal;
+        this.fechaCreacion = fechaCreacion;
+        this.municipio = municipio;
+    }
+
     @ManyToOne
     @JoinColumn(name = "id_municipio_fk")
     private Municipio  municipio;

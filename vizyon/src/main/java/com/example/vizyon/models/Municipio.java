@@ -14,9 +14,18 @@ public class Municipio {
     @Column(name = "nombre")
     private String nombre;
 
+    public Municipio(int idMunicipio, String nombre, Departamento departamento) {
+        this.idMunicipio = idMunicipio;
+        this.nombre = nombre;
+        this.departamento = departamento;
+    }
+
     @ManyToOne
     @JoinColumn(name = "id_departamento_fk")
     private Departamento departamento;
+
+    public Municipio() {
+    }
 
     public int getIdMunicipio() {
         return idMunicipio;

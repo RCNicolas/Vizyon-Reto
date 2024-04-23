@@ -11,6 +11,14 @@ public class Talla {
     @Column(name = "id")
     private int idTalla;
 
+    public Talla() {
+    }
+
     @Column(name = "descripcion")
     private String descripcion;
+
+    public Talla(int idTalla, String descripcion) {
+        this.idTalla = idTalla;
+        this.descripcion = descripcion;
+    }
 }

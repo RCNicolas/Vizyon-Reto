@@ -14,6 +14,14 @@ public class Color {
     @Column(name = "descripcion")
     private String descripcion;
 
+    public Color(int idColor, String descripcion) {
+        this.idColor = idColor;
+        this.descripcion = descripcion;
+    }
+
+    public Color() {
+    }
+
     public int getIdColor() {
         return idColor;
     }

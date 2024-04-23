@@ -13,6 +13,9 @@ public class Pais {
     @Column(name = "nombre")
     private String nombre;
 
+    public Pais() {
+    }
+
     public Pais(int idPais, String nombre) {
         this.idPais = idPais;
         this.nombre = nombre;

@@ -31,6 +31,9 @@ public class Cliente {
     @JoinColumn(name = "id_municipio_fk")
     private Municipio municipio;
 
+    public Cliente() {
+    }
+
     public int getId() {
         return id;
     }
@@ -41,6 +44,15 @@ public class Cliente {
 
     public Long getIdCliente() {
         return idCliente;
+    }
+
+    public Cliente(int id, Long idCliente, String nombre, Date fechaRegistro, TipoPersona tipoPersona, Municipio municipio) {
+        this.id = id;
+        this.idCliente = idCliente;
+        this.nombre = nombre;
+        this.fechaRegistro = fechaRegistro;
+        this.tipoPersona = tipoPersona;
+        this.municipio = municipio;
     }
 
     public void setIdCliente(Long idCliente) {

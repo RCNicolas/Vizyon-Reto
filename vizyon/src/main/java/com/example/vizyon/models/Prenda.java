@@ -14,6 +14,20 @@ public class Prenda {
     @Column(name = "nombre")
     private String nombre;
 
+    public Prenda(int idPrenda, String nombre, Double valorUnitCOP, Double valorUnitUSD, String codigo, Estado estado, TipoProteccion tipoProteccion, Genero genero) {
+        this.idPrenda = idPrenda;
+        this.nombre = nombre;
+        this.valorUnitCOP = valorUnitCOP;
+        this.valorUnitUSD = valorUnitUSD;
+        this.codigo = codigo;
+        this.estado = estado;
+        this.tipoProteccion = tipoProteccion;
+        this.genero = genero;
+    }
+
+    public Prenda() {
+    }
+
     @Column(name = "valor_unit_cop")
     private Double valorUnitCOP;
 

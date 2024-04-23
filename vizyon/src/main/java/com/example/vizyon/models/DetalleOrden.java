@@ -14,6 +14,19 @@ public class DetalleOrden {
     @Column(name = "cantidad_producida")
     private int cantidadProducida;
 
+    public DetalleOrden() {
+    }
+
+    public DetalleOrden(int idDetalleOrden, int cantidadProducida, int cantidadProducir, Orden orden, Prenda prenda, Color color, Estado estado) {
+        this.idDetalleOrden = idDetalleOrden;
+        this.cantidadProducida = cantidadProducida;
+        this.cantidadProducir = cantidadProducir;
+        this.orden = orden;
+        this.prenda = prenda;
+        this.color = color;
+        this.estado = estado;
+    }
+
     @Column(name = "cantidad_producir")
     private int cantidadProducir;
 

@@ -29,6 +29,17 @@ public class Orden {
     @JoinColumn(name = "id_estado_fk")
     private Estado estado;
 
+    public Orden() {
+    }
+
+    public Orden(int idOrden, Date fecha, Empleado empleado, Cliente cliente, Estado estado) {
+        this.idOrden = idOrden;
+        this.fecha = fecha;
+        this.empleado = empleado;
+        this.cliente = cliente;
+        this.estado = estado;
+    }
+
     public int getIdOrden() {
         return idOrden;
     }

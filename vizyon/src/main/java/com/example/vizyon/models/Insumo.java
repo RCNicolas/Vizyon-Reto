@@ -23,6 +23,17 @@ public class Insumo {
     @Column(name = "stock_min")
     private Double stockMin;
 
+    public Insumo() {
+    }
+
+    public Insumo(int idInsumo, String nombre, Double valorUnit, Double stockMax, Double stockMin) {
+        this.idInsumo = idInsumo;
+        this.nombre = nombre;
+        this.valorUnit = valorUnit;
+        this.stockMax = stockMax;
+        this.stockMin = stockMin;
+    }
+
     public int getIdInsumo() {
         return idInsumo;
     }

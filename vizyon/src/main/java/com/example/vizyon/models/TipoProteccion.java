@@ -14,6 +14,14 @@ public class TipoProteccion {
     @Column(name = "descripcion")
     private String descripcion;
 
+    public TipoProteccion(int idTipoProteccion, String descripcion) {
+        this.idTipoProteccion = idTipoProteccion;
+        this.descripcion = descripcion;
+    }
+
+    public TipoProteccion() {
+    }
+
     public int getIdTipoProteccion() {
         return idTipoProteccion;
     }

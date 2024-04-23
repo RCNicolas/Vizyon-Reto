@@ -14,6 +14,14 @@ public class Genero {
     @Column(name = "descripcion")
     private String descripcion;
 
+    public Genero() {
+    }
+
+    public Genero(int idGenero, String descripcion) {
+        this.idGenero = idGenero;
+        this.descripcion = descripcion;
+    }
+
     public int getIdGenero() {
         return idGenero;
     }

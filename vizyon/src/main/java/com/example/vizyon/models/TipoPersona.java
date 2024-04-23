@@ -14,6 +14,14 @@ public class TipoPersona {
     @Column(name = "nombre")
     private String nombre;
 
+    public TipoPersona(int idPersona, String nombre) {
+        this.idPersona = idPersona;
+        this.nombre = nombre;
+    }
+
+    public TipoPersona() {
+    }
+
     public int getIdPersona() {
         return idPersona;
     }

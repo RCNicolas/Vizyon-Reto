@@ -27,6 +27,9 @@ public class Departamento {
                 '}';
     }
 
+    public Departamento() {
+    }
+
     public int getIdDepartamento() {
         return idDepartamento;
     }
@@ -48,6 +51,12 @@ public class Departamento {
     }
 
     public void setPais(Pais pais) {
+        this.pais = pais;
+    }
+
+    public Departamento(int idDepartamento, String nombre, Pais pais) {
+        this.idDepartamento = idDepartamento;
+        this.nombre = nombre;
         this.pais = pais;
     }
 }

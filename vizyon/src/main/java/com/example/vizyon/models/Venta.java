@@ -7,6 +7,8 @@ import java.util.Date;
 @Entity
 @Table(name = "venta")
 public class Venta {
+    public Venta() {
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,6 +30,14 @@ public class Venta {
     @ManyToOne
     @JoinColumn(name = "id_forma_pago_fk")
     private FormaPago formaPago;
+
+    public Venta(int idVenta, Date fecha, Empleado empleado, Cliente cliente, FormaPago formaPago) {
+        this.idVenta = idVenta;
+        this.fecha = fecha;
+        this.empleado = empleado;
+        this.cliente = cliente;
+        this.formaPago = formaPago;
+    }
 
     public int getIdVenta() {
         return idVenta;

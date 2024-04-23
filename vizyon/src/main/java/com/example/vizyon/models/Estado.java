@@ -18,6 +18,15 @@ public class Estado {
     @JoinColumn(name = "id_tipo_estado_fk")
     private TipoEstado tipoEstado;
 
+    public Estado() {
+    }
+
+    public Estado(int idEstado, String decripcion, TipoEstado tipoEstado) {
+        this.idEstado = idEstado;
+        this.decripcion = decripcion;
+        this.tipoEstado = tipoEstado;
+    }
+
     public int getIdEstado() {
         return idEstado;
     }

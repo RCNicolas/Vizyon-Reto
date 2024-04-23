@@ -13,4 +13,12 @@ public class TipoEstado {
 
     @Column(name = "descripcion")
     private String descripcion;
+
+    public TipoEstado() {
+    }
+
+    public TipoEstado(int idTipoEstado, String descripcion) {
+        this.idTipoEstado = idTipoEstado;
+        this.descripcion = descripcion;
+    }
 }

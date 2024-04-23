@@ -28,4 +28,14 @@ public class Empleado {
     @JoinColumn(name = "id_municipio_fk")
     private Municipio municipio;
 
+    public Empleado() {
+    }
+
+    public Empleado(int idEmpleado, String nombre, Date fechaIngreso, Cargos cargos, Municipio municipio) {
+        this.idEmpleado = idEmpleado;
+        this.nombre = nombre;
+        this.fechaIngreso = fechaIngreso;
+        this.cargos = cargos;
+        this.municipio = municipio;
+    }
 }
