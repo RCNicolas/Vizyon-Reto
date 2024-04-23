@@ -23,7 +23,7 @@ public class Empresa {
     private String representanteLegal;
 
     @Temporal(TemporalType.DATE)
-    @Column(name = "fecha__creacion")
+    @Column(name = "fecha_creacion")
     private Date fechaCreacion;
 
     @ManyToOne

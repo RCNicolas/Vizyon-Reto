@@ -14,7 +14,7 @@ public class Cliente {
     private int id;
 
     @Column(name = "idCliente")
-    private int idCliente;
+    private Long idCliente;
 
     @Column(name = "nombre")
     private String nombre;
@@ -39,11 +39,11 @@ public class Cliente {
         this.id = id;
     }
 
-    public int getIdCliente() {
+    public Long getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(int idCliente) {
+    public void setIdCliente(Long idCliente) {
         this.idCliente = idCliente;
     }
 

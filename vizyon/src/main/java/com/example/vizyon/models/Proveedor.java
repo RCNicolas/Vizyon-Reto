@@ -22,6 +22,6 @@ public class Proveedor {
     private TipoPersona tipoPersona;
 
     @ManyToOne
-    @JoinColumn(name = "id_municipiofk")
+    @JoinColumn(name = "id_municipio_fk")
     private Municipio municipio;
 }
